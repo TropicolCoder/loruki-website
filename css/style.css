@@ -66,6 +66,10 @@ code, pre {
     display: flex;
 }
 
+.navbar .logo a, .navbar .logo a:hover  {
+    border-bottom: none;
+}
+
 .navbar a {
     color: #fff;
     padding: 10px;
@@ -251,7 +255,7 @@ code, pre {
     border-bottom: 1px #ccc solid;
 }
 
-.docs-main a:hover {
+.docs-main nav a:hover {
     font-weight: bold;
 }
 
@@ -302,7 +306,7 @@ code, pre {
 }
 
 /* Tablets and under */
-@media(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .grid,
     .showcase .grid,
     .stats .grid,
@@ -326,6 +330,8 @@ code, pre {
     .showcase-form{
         justify-self: center;
         margin: auto;
+        height: auto;
+        width: auto;
     }
 
     .cli .grid >:first-child {
@@ -353,7 +359,7 @@ code, pre {
 }
 
 /* Mobile */
-@media(max-width: 500px) {
+@media screen and (max-width: 500px) {
     .navbar {
         height: 110px;
     }
